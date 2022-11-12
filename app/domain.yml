@@ -60,6 +60,8 @@ entities:
 slots:
   drug_name:
     type: text
+    mappings:
+    - type: custom
 
 responses:
   utter_greet:
