@@ -15,6 +15,10 @@ FROM rasa/rasa:latest
 
 COPY . .
 
+USER root
+RUN chmod -R 777 ./entrypoint.sh
+USER 1001
+
 # Run the generated shell script.
-RUN ["chmod", "+x", "./entrypoint.sh"]
+# RUN ["chmod", "+x", "./entrypoint.sh"]
 ENTRYPOINT ["./entrypoint.sh"]
