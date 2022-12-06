@@ -1,10 +1,10 @@
 steps:
   # Build the container image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/cat-food-finder/rasa-bot', '.']
+    args: ['build', '-t', 'gcr.io/chatala/rasa-bot', '.']
   # Push the container image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/cat-food-finder/rasa-bot']
+    args: ['push', 'gcr.io/chatala/rasa-bot']
   # Deploy container image to Cloud Run -https://cloud.google.com/sdk/gcloud/reference/run/services/update
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
