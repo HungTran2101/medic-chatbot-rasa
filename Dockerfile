@@ -16,4 +16,7 @@ FROM rasa/rasa:latest
 COPY . .
 
 # Run the generated shell script.
-ENTRYPOINT ["./entrypoint.sh"]
+USER airflow
+WORKDIR ${AIRFLOW_HOME}
+RUN chmod +x entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
