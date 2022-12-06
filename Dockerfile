@@ -17,6 +17,5 @@ COPY . .
 
 # Run the generated shell script.
 USER airflow
-WORKDIR ${AIRFLOW_HOME}
 RUN chmod +x entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
