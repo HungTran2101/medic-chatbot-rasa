@@ -16,5 +16,5 @@ FROM rasa/rasa:latest
 COPY . .
 
 # Run the generated shell script.
-RUN ["chmod", "+x", "/home/entrypoint.sh"]
-ENTRYPOINT [ "bash", "-c", "/home/entrypoint.sh" ]
+RUN ["chmod", "+x", "./home/entrypoint.sh"]
+ENTRYPOINT [ "bash", "-c", "./home/entrypoint.sh" ]
