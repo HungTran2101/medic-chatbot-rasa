@@ -17,4 +17,4 @@ COPY . .
 
 # Run the generated shell script.
 # RUN ["chmod", "+x", "./home/entrypoint.sh"]
-ENTRYPOINT ["sh", "/entrypoint.sh"]
+ENTRYPOINT ["./entrypoint.sh"]
