@@ -1,7 +1,2 @@
 #!/bin/bash
-if [ -z "$PORT" ]
-then
-  PORT=5005
-fi
-
-rasa run -p ${PORT} --cors "*"
+rasa run -p ${PORT} --enable-api --cors "*"
