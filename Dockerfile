@@ -19,7 +19,7 @@ USER root
 RUN chmod -R 777 ./entrypoint.sh
 USER 1001
 
-EXPOSE 8080
+EXPOSE 4200
 
 # Run the generated shell script.
 # RUN ["chmod", "+x", "./entrypoint.sh"]
