@@ -2,7 +2,7 @@
 
 if [ -z "$PORT"]
 then
-  PORT=4200
+  PORT=5005
 fi
 
 rasa run -p ${PORT} --cors "*"
